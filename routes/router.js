@@ -3,6 +3,7 @@ const router = new express.Router();
 const userdb = require("../models/userSchema");
 var bcrypt = require("bcryptjs");
 const authenticate = require("../middleware/authenticate");
+const cors = require("cors");
 
 
 // for user registration
