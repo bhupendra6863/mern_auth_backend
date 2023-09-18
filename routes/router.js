@@ -94,7 +94,7 @@ router.post("/login", async (req, res) => {
 
 
 // user valid
-router.get("/validuser",authenticate,async(req,res)=>{
+router.get("/validuser", cors(), authenticate,async(req,res)=>{
     try {
         const ValidUserOne = await userdb.findOne({_id:req.userId});
         res.status(201).json({status:201,ValidUserOne});
