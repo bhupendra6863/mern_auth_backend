@@ -14,7 +14,9 @@ const port = process.env.PORT || 8009;
 
 app.use(express.json());
 app.use(cookiParser());
-app.use(cors());
+app.use(cors({
+    origin:"https://mern-auth-frontend-my6m.onrender.com"
+}));
 app.use(router);
 
 
