@@ -14,7 +14,8 @@ const port = process.env.PORT || 8009;
 
 app.options('/logout', cors())
 app.use(cors({
-    origin:'https://mern-auth-frontend-my6m.onrender.com'
+    origin:'https://mern-auth-frontend-my6m.onrender.com',
+    credentials:true
 }));
 app.use(express.json());
 app.use(cookiParser());
