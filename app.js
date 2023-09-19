@@ -12,7 +12,7 @@ const port = process.env.PORT || 8009;
 //     res.status(201).json("server created")
 // });
 
-app.options('/logout', cors())
+
 app.use(cors({
     origin:'https://mern-auth-frontend-my6m.onrender.com',
     credentials:true
